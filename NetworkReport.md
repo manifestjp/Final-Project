@@ -31,7 +31,7 @@ You must inspect your traffic capture to answer the following questions:
   - The Request downloaded malware to `172.16.4.205`
 
 4. As a bonus, retrieve the desktop background of the Windows host.
-  ![DesktopBackground](./images/DesktopBackground.jpg)
+- ![Desktop_Background](./images/DesktopBackground.jpg)
 
 ---
 
