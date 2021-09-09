@@ -4,7 +4,6 @@
 - [Network Topology](#network-topology)
 - [Description of Targets](#description-of-targets)
 - [Monitoring the Targets](#monitoring-the-targets)
-- [Patterns of Traffic & Behavior](#patters-of-traffic-&-begavior)
 - [Suggestions for Going Further](#suggestions-for-going-further)
 
 ### Network Topology
@@ -68,7 +67,7 @@ Alert 3 is implemented as follows:
   - **Vulnerability Mitigated**: By controlling the CPU usage percentage it will trigger a memory dump of the stored information.
   - **Reliability**: This alert can generate a lot of false positives because the CPU usage can spike even if there is no attack. It is not very reliable in discerning between normal CPU usage and an attack.
   
-### Suggestions for Going Further (Optional)
+### Suggestions for Going Further
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identifed by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain_how_to implement each patch.
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watchin for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
