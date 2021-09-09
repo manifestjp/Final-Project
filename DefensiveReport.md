@@ -71,14 +71,14 @@ Alert 3 is implemented as follows:
 - Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identifed by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain_how_to implement each patch.
 
 The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watchin for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- Vulnerability 1- Excessive HTTP Errors
+- Vulnerability 1- `Excessive HTTP Errors`
   - **Patch**: Require a stronger password policy in the user account settings and update the group policy in Windows and Linux.
   - **Why It Works**: By changing the password policy and updating the group policy it should be almost impossible to brute-force and gain access to the system.
 
-- Vulnerability 2- HTTP Request Size Monitor
+- Vulnerability 2- `HTTP Request Size Monitor`
   - **Patch**: Use of proper threat management and intrusion prevention systems such as firewalls, anti-spam filters, load balancing, DDoS guard, a VPN and other DDoS prevention systems and techniques.
   - **Why It Works**: Using said systems and techniques together will help to identify and stop a DDoS threat before it can have catashtrophic effects on the system.
   
-- Vulnerability 3- CPU Usage Monitor
+- Vulnerability 3- `CPU Usage Monitor`
   - **Patch**: Use of host intrusion prevention system to identify DOS attack.
   - **Why It Works**: This will stop malware and malicious code by monitoring the behavior of the code.
