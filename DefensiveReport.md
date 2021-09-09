@@ -34,7 +34,7 @@ The following machines were identified o the network:
   
 ### Description of Targets
 
-The target of this attack was: 'Target 1' '(192.168.1.110)'.
+The target of this attack was: `Target 1` `(192.168.1.110)`.
 
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
@@ -49,21 +49,21 @@ Traffic to these services should be carefully monitored. To this end, we have im
 #### Excessive HTTP Errors
 
 Alert 1 is implemented as follows:
-  - **Metric**: 'ftp.response.status_code > 400'
+  - **Metric**: `ftp.response.status_code > 400`
   - **Threshold**: 5 in the last 5 minutes
   - **Vulnerability Mitigated**: The security team can identify attacks and block the attacking IP address/s, change the password and filter or close port 22.
   - **Reliability**: This alert will not generate a lot of flase positives. It is highly reliable in identifying brute force attacks.
   
 #### HTTP Request Size Monitor
 Alert 2 is implemented as follows:
-  - **Metric**: 'http.request.bytes'
+  - **Metric**: `http.request.bytes`
   - **Threshold**: 3500 in the last 1 minute
   - **Vulnerability Mitigated**: By limiting the number of HTTP request size through a filter, the system will be protected from DDoS attacks.
   - **Reliability**: This alert will not generate a lot of false positives. It is highly reliable in indentifying DDoS attacks.
   
 #### CPU Usage Monitor
 Alert 3 is implemented as follows:
-  - **Metric**: 'system.process.cpu.total.pct'
+  - **Metric**: `system.process.cpu.total.pct`
   - **Threshold**: 0.5 in the last 5 minutes
   - **Vulnerability Mitigated**: By controlling the CPU usage percentage it will trigger a memory dump of the stored information.
   - **Reliability**: This alert can generate a lot of false positives because the CPU usage can spike even if there is no attack. It is not very reliable in discerning between normal CPU usage and an attack.
