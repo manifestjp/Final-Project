@@ -1,11 +1,11 @@
 # Blue Team: Summary of Operations
 
 ## Table of Contents
-- Network Topology
-- Description of Targets
-- Monitoring the Targets
-- Patterns of Traffic & Behavior
-- Suggestions for Going Further
+- [Network Topology](#network-topology)
+- [Description of Targets](#description-of-targets)
+- [Monitoring the Targets](#monitoring-the-targets)
+- [Patterns of Traffic & Behavior](#patters-of-traffic-&-begavior)
+- [Suggestions for Going Further](#suggestions-for-going-further)
 
 ### Network Topology
 
