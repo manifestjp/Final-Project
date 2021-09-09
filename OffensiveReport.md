@@ -1,9 +1,9 @@
 # Red Team: Summary of Operations
 
 ## Table of Contents
-- Exposed Services
-- Critical Vulnerabilities
-- Exploitation
+- [Exposed Services](#exposed-services)
+- [Critical Vulnerabilities](#critical-vulnerabilities)
+- [Exploitation](#exploitation)
 
 ### Exposed Services
 
