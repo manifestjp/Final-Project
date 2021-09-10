@@ -40,6 +40,7 @@ The following vulnerabilities were identified on each target:
   - python can be run with sudo privilages.
     - The user steven has the ability to run python with sudo.
     - Running python with sudo can execute arbitrary code on the system to get a shell with root access.
+- ![pythonshell](./Images/pythonshell.JPG)
 
   - [CVE-2017-7494](https://www.cvedetails.com/cve/CVE-2017-7494/)
     - The version of Samba running on this server allows an attacker to execute malicious code remotely.
