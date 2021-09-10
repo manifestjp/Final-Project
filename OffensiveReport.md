@@ -9,7 +9,7 @@
 
 Nmap scan results for each machine reveal the below services and OS details:
 
-![nmapscantarget1](./Images/nmap%20scan.jpg)
+![nmapscan](./Images/nmap scan.jpg)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
