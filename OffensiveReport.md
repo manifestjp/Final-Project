@@ -9,10 +9,7 @@
 
 Nmap scan results for each machine reveal the below services and OS details:
 
-```bash
-$ nmap -sS -sV 192.168.1.110
-  # TODO: Insert scan output
-```
+![nmapscantarget1](./Images/nmap scan.jpg)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
