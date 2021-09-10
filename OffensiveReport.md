@@ -30,7 +30,7 @@ The following vulnerabilities were identified on each target:
   - SSH with password.
 	- Users are able to SSH with a password instead of requiring an SSH key.
 	- User michael had a weak password(Brute forced with HYDRA)
-- ![hydrascan](./Images/Michael%20hydra%20crack%20passwork.JPG)
+- ![hydrascan](./Images/Michael%20hydra%20crack%20password.JPG)
 
   - Database credentials for wordpress are written in plain text.
 	- Database credentials were stored in /var/www/html/
