@@ -131,7 +131,7 @@ The following vulnerabilities were identified on each target:
 - ![hydrascan](./Images/Michael%20hydra%20crack%20password.JPG)
 
   - Database credentials for wordpress are written in plain text.
-    - Database credentials were stored in /var/www/html/
+    - Database credentials were stored in `/var/www/html/`
     - This allowed me to access the mysql database and extract confidential information such as password hashes.
 - ![sqlcredentials](./Images/MySQL%20password.JPG)
 
@@ -160,7 +160,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag1`: `b9bbcb33e11b80be759c4e844862482d`
     - **Exploit Used**
       - Weak password / SSH into system with password.
-      - After connecting to the system using michael's credentials, I was able to run the grep command in the `/var` directory and discovered flag1 was contained in `/var/www/html/service.html`.
+      - After connecting to the system using `michael`'s credentials, I was able to run the grep command in the `/var` directory and discovered flag1 was contained in `/var/www/html/service.html`.
     - Commands run:
       - `ssh michael@192.168.1.110` (password michael)
       - `cd /var`
@@ -170,7 +170,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag2.txt`: `fc3fd58dcdad9ab23faca6e9a36e581c`
     - **Exploit Used**
       - Weak password / SSH into system with password.
-      - After connecting to the system using michael's credentials, I was able to cat the flag 2 file found in `/var/www`.
+      - After connecting to the system using `michael`'s credentials, I was able to cat the flag 2 file found in `/var/www`.
     - Commands run:
       - `ssh michael@192.168.1.110` (password michael)
       - `cd /var/www`
@@ -180,7 +180,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - 'flag3': `afc01ab56b50591e7dccf93122770cd2`
     - **Exploit Used**
       - Datbase credentails in plain text.
-      - I was able to select `flag3` out of wp_posts in the mysql database after obtaining the credentails in 		`/var/www/html/wp_config.php`.
+      - I was able to select `flag3` out of `wp_posts` in the mysql database after obtaining the credentails in 		`/var/www/html/wp_config.php`.
     - Commands run:
       - `ssh michael@192.168.1.110` (password michael)
       - `cat /var/www/html/wp_config.php`
@@ -193,7 +193,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - 'flag4.txt': `715dea6c055b9fe3337544932f2941ce`
     - **Exploit Used**
       - `python` can be run with `sudo`.
-      - After cracking steven's password hash using john the ripper, it was discovered that steven could run `python` with `sudo` 	priviliages.
+      - After cracking steven's password hash using `john`, it was discovered that steven could run `python` with `sudo` 	priviliages.
       - Using a simple command I was able to execute a shell with root privilages and `flag4` was found in the `/root` directory.
     - Commands run:
       - `ssh steven@192.168.1.110 (password pink84)`
