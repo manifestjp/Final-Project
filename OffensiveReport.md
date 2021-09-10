@@ -110,7 +110,7 @@ Nmap done: 256 IP addresses (6 hosts up) scanned in 34.52 seconds
 ```
 
 This scan identifies the services below as potential points of entry:
-- Target 1
+- Target 1 (192.168.1.110)
   - Port 22 (SSH)
   - Port 80 (HTTP)
   - Port 111 (rpcbind)
