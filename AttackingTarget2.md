@@ -14,11 +14,11 @@
 
 - `nikto` scan
  - A nikto scan revealed all dangerous files/CGIs, outdated server software and other problems.
-- ![niktoscan](./Images/Target2/nikto%20scan.JPG)
+- ![niktoscan](./Images/Target2/nikto%20results.JPG)
 
 - `gobuster` scan
   - A gobuster scan brute-forced all available URI's and DNS subdomains.
-- [gobusterscan](./Images/Target2/gobuster%20scan.JPG)
+- ![gobusterscan](./Images/Target2/gobuster%20scan.JPG)
 
 ### Exploiting Discovered Vulnerability
 
