@@ -7,7 +7,7 @@ You must inspect your traffic capture to answer the following questions:
   - `Frank-n-Ted.com`
 2. What is the IP address of teh Domain Controller (DC) of the AD network?
   - `10.6.12.12` `(Frank-n-Ted-DC.frank-n-ted.com)`
-3. What is the name of teh malware downloaded to the `10.6.12.203` machine?
+3. What is the name of the malware downloaded to the `10.6.12.203` machine?
   - `june11.dll`
 4. Upload the file to [VirusTotal.com]
 
