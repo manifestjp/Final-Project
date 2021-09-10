@@ -35,7 +35,7 @@ The following vulnerabilities were identified on each target:
   - Database credentials for wordpress are written in plain text.
     - Database credentials were stored in /var/www/html/
     - This allowed me to access the mysql database and extract confidential information such as password hashes.
-- [sqlcredentials](./Images/MySQLpassword.JPG)
+- ![sqlcredentials](./Images/MySQL%20password.JPG)
 
   - python can be run with sudo privilages.
     - The user steven has the ability to run python with sudo.
