@@ -11,31 +11,31 @@ Nmap scan results for each machine reveal the below services and OS details:
 
 ```bash
 $ nmap -sS-sV -O 192.168.1.0/24
-# Nmap scan report for 192.168.1.1
-# Host is up (0.00057s latency).
-# Not shown: 995 filtered ports
-# PORT     STATE SERVICE       VERSION
-# 135/tcp  open  msrpc         Microsoft Windows RPC
-# 139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
-# 445/tcp  open  microsoft-ds?
-# 2179/tcp open  vmrdp?
-# 3389/tcp open  ms-wbt-server Microsoft Terminal Services
-# MAC Address: 00:15:5D:00:04:0D (Microsoft)
-# Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
-# Device type: general purpose
-# Running (JUST GUESSING): Microsoft Windows XP|7|2008 (89%)
-# OS CPE: cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2008::sp1
-# cpe:/o:microsoft:windows_server_2008:r2
-# Aggressive OS guesses: Microsoft Windows XP SP3 (89%), Microsoft Windows XP SP2 (87%), Microsoft Windows 7 (85%), Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (85%)
-# No exact OS matches for host (test conditions non-ideal).
-# Network Distance: 1 hop
-# Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
-# 
-# Nmap scan report for 192.168.1.100
-# Host is up (0.0010s latency).
-# Not shown: 998 closed ports
-# PORT     STATE SERVICE VERSION
-# 22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+Nmap scan report for 192.168.1.1
+Host is up (0.00057s latency).
+Not shown: 995 filtered ports
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+2179/tcp open  vmrdp?
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+MAC Address: 00:15:5D:00:04:0D (Microsoft)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running (JUST GUESSING): Microsoft Windows XP|7|2008 (89%)
+OS CPE: cpe:/o:microsoft:windows_xp::sp3 cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_server_2008::sp1
+cpe:/o:microsoft:windows_server_2008:r2
+Aggressive OS guesses: Microsoft Windows XP SP3 (89%), Microsoft Windows XP SP2 (87%), Microsoft Windows 7 (85%), Microsoft Windows Server 2008 SP1 or Windows Server 2008 R2 (85%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 1 hop
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Nmap scan report for 192.168.1.100
+Host is up (0.0010s latency).
+Not shown: 998 closed ports
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
 9200/tcp open  http    Elasticsearch REST API 7.6.1 (name: elk; cluster: elasticsearch; Lucene 8.4.0)
 MAC Address: 4C:EB:42:D2:D5:D7 (Intel Corporate)
 Device type: general purpose
