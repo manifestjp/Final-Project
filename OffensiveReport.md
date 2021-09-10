@@ -23,13 +23,13 @@ This scan identifies the services below as potential points of entry:
 
 The following vulnerabilities were identified on each target:
 - Target 1
-  - wpscan enumerate usernames
-    - running wpscan was able to enumerate usernames for the target system.
+  - `wpscan` enumerate usernames
+    - running `wpscan` was able to enumerate usernames for the target system.
 - ![wpscan](./Images/wpscan2.JPG)
 
-  - SSH with password.
-    - Users are able to SSH with a password instead of requiring an SSH key.
-    - User michael had a weak password(Brute forced with HYDRA)
+  - `ssh` as user `michael` with password.
+    - Users are able to `ssh` with a password instead of requiring an `ssh` key.
+    - User `michael` had a weak password(Brute forced with `hydra`)
 - ![hydrascan](./Images/Michael%20hydra%20crack%20password.JPG)
 
   - Database credentials for wordpress are written in plain text.
@@ -37,9 +37,15 @@ The following vulnerabilities were identified on each target:
     - This allowed me to access the mysql database and extract confidential information such as password hashes.
 - ![sqlcredentials](./Images/MySQL%20password.JPG)
 
-  - python can be run with sudo privilages.
-    - The user steven has the ability to run python with sudo.
-    - Running python with sudo can execute arbitrary code on the system to get a shell with root access.
+  - `ssh` with user `steven` credentials.
+    - Users are able to `ssh` with a password instead of requiring an `ssh` key.
+    - Running `john` against the password hashes gave user `steven`'s password.
+    - This allowed me to find user `steven`'s sudo privilages.
+- ![stevensudo](./Images/Steven%20sudo%20priv%20file.JPG)
+
+  - `python` can be run with `sudo` privilages.
+    - The user steven has the ability to run `python` with `sudo`.
+    - Running `python` with `sudo` can execute arbitrary code on the system to get a shell with root access.
 - ![pythonshell](./Images/pythonshell.JPG)
 
   - [CVE-2017-7494](https://www.cvedetails.com/cve/CVE-2017-7494/)
