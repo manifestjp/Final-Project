@@ -65,7 +65,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag2.txt`: `fc3fd58dcdad9ab23faca6e9a36e581c`
     - **Exploit Used**
       - Weak password / SSH into system with password.
-      - After connecting to the system using michael's credentials, I was able to cat the flag 2 file found in /var/www.
+      - After connecting to the system using michael's credentials, I was able to cat the flag 2 file found in `/var/www`.
     - Commands run:
       - `ssh michael@192.168.1.110` (password michael)
       - `cd /var/www`
