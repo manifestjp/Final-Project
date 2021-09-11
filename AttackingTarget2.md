@@ -68,7 +68,7 @@ fi
   - Commands run:
     - `gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u http://192.168.1.115`
     - `http://192.168.1.115/vendor/PATH` (In Kali web browser.)
-- ![flag1](./Images/Target2/flag1.JPG)
+- ![flag1](./Images/Target2/flag%201.JPG)
 
 - `flag2.txt`: `6a8ed560f0b5358ecf844108048eb337`
   - **Exploit Used**
