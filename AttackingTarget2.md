@@ -1,5 +1,10 @@
 # Attacking Target 2
 
+## Table of Contents
+- [Discovering Vulnerabilities](#discovering-vulnerabilites)
+- [Exploiting Discovered Vulnerability](#exploiting-discovered-vulnerabilities)
+- [Flags](#flags)
+
 ### Discovering Vulnerabilities
 
 - `nmap` scan
@@ -56,6 +61,6 @@ fi
 
 ### Flags
 
-- `flag1`: `a2c1f66d2b8051bd3a5874b5b6e43e21`
-- `flag2`: `6a8ed560f0b5358ecf844108048eb337`
-- `flag3`:
+- `flag1.txt`: `a2c1f66d2b8051bd3a5874b5b6e43e21`
+- `flag2.txt`: `6a8ed560f0b5358ecf844108048eb337`
+- `flag3.png`: `a0f568aa9de277887f37730d71520d9b`
