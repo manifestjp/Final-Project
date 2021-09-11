@@ -1,8 +1,8 @@
 # Attacking Target 2
 
 ## Table of Contents
-- [Discovering Vulnerabilities](#discovering-vulnerabilites)
-- [Exploiting Discovered Vulnerability](#exploiting-discovered-vulnerabilities)
+- [Discovering Vulnerabilities](#discovering-vulnerabilities)
+- [Exploiting Discovered Vulnerability](#exploiting-discovered-vulnerability)
 - [Flags](#flags)
 
 ### Discovering Vulnerabilities
