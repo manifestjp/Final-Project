@@ -18,7 +18,7 @@
 - ![nmapscan](./Images/Target2/nmap%20scan%20target2.JPG)
 
 - `nikto` scan
- - A nikto scan revealed all dangerous files/CGIs, outdated server software and other problems.
+  - A nikto scan revealed all dangerous files/CGIs, outdated server software and other problems.
 - ![niktoscan](./Images/Target2/nikto%20results.JPG)
 
 - `gobuster` scan
